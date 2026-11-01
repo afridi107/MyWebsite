@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Jehan Khan Afridi — developer, builder and lifelong learner.">
+  <meta name="theme-color" content="#0b0f17">
+  <title>Jehan Khan Afridi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Home">JK<span>A</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1 class="hero-title">Jehan Khan Afridi<span class="accent">.</span></h1>
+        <h2 class="hero-subtitle">I build things for the web.</h2>
+        <p class="hero-text">
+          I'm a developer who enjoys turning ideas into clean, fast and accessible
+          experiences. I love learning new technologies and solving real problems with code.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">01.</span> About me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Hello! I'm Jehan. My interest in technology started with curiosity about how
+              websites and apps work, and it grew into a passion for building them myself.
+            </p>
+            <p>
+              Today I focus on creating responsive, user-friendly websites and tools.
+              I care about clean code, thoughtful design and making things that are
+              genuinely useful to people.
+            </p>
+            <p>Here are a few technologies I've been working with recently:</p>
+            <ul class="skills">
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+              <li>Git &amp; GitHub</li>
+              <li>Python</li>
+              <li>UI / UX Basics</li>
+            </ul>
+          </div>
+          <div class="about-card reveal">
+            <div class="avatar" aria-hidden="true">JKA</div>
+            <dl class="facts">
+              <div><dt>Focus</dt><dd>Web Development</dd></div>
+              <div><dt>Currently</dt><dd>Building &amp; learning</dd></div>
+              <div><dt>Open to</dt><dd>Collaborations</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">02.</span> Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <a href="https://github.com/afridi107/MyWebsite" class="project-link" target="_blank" rel="noopener" aria-label="View source on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+              </a>
+            </div>
+            <h3>Personal Website</h3>
+            <p>This site — a responsive, dark-themed portfolio built with plain HTML, CSS and JavaScript and hosted on GitHub Pages.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <a href="#" class="project-link" aria-label="Project link">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+              </a>
+            </div>
+            <h3>Task Manager App</h3>
+            <p>A simple to-do app that lets you add, complete and filter tasks, with data saved in the browser.</p>
+            <ul class="tags"><li>JavaScript</li><li>LocalStorage</li></ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <a href="#" class="project-link" aria-label="Project link">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+              </a>
+            </div>
+            <h3>Weather Dashboard</h3>
+            <p>A clean dashboard that shows current conditions and a forecast for any city using a public weather API.</p>
+            <ul class="tags"><li>API</li><li>Fetch</li><li>CSS Grid</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <h2 class="section-title center"><span class="accent">03.</span> Get in touch</h2>
+        <p class="contact-text reveal">
+          Whether you have a question, a project idea, or just want to say hi,
+          my inbox is always open. I'll do my best to get back to you!
+        </p>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn btn-primary full">Send message</button>
+        </form>
+        <ul class="socials">
+          <li><a href="mailto:your.email@example.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          </a></li>
+          <li><a href="https://github.com/afridi107" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jehan Khan Afridi. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
