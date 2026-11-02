@@ -15,7 +15,6 @@ Double-click `index.html`, or drag it into Chrome, Edge or Firefox. You don't ne
 | `assets/fonts/` | Self-hosted fonts (SIL Open Font License, licences included) |
 | `assets/img/` | Images as AVIF/WebP in several sizes, with a JPG fallback |
 | `favicon.svg`, `robots.txt`, `sitemap.xml` | Favicon and SEO files |
-| `MyWebsite/` | Source material (brief, original images, slide previews). It isn't part of the website, so don't upload it. |
 
 ## Contact form
 For now, the form opens the visitor's email program with a pre-filled message to info@jandforiginals.de (mailto). Nothing is sent to a server.
