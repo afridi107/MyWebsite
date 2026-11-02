@@ -1,176 +1,464 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website of Jehan Khan Afridi — developer, builder and lifelong learner.">
-  <meta name="theme-color" content="#0b0f17">
-  <title>Jehan Khan Afridi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>J&amp;F Originals – Massagesessel, Kaffee- &amp; Snackautomaten für Ihre Gewerbefläche | Region Regensburg</title>
+  <meta name="description" content="Wir verwandeln freie Flächen in vollautomatisierte Service- und Regenerationszonen: höhere Kundenzufriedenheit und passiver Umsatz ab Tag 1 – ohne eigene Investition und ohne operativen Aufwand für Ihr Team. Region Regensburg.">
+  <meta name="theme-color" content="#F6F4F1">
+  <link rel="canonical" href="https://jandforiginals.de/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="J&amp;F Originals">
+  <meta property="og:title" content="J&amp;F Originals – Mehrwert für Ihre Flächen">
+  <meta property="og:description" content="Massagesessel, Kaffee-Vollautomaten, Kinderfahrgeschäfte und Snack-Automaten für Ihre Gewerbefläche – 0 % Investition, 0 % Aufwand. Region Regensburg.">
+  <meta property="og:url" content="https://jandforiginals.de/">
+  <meta property="og:image" content="https://jandforiginals.de/assets/img/og-jf-originals.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "J&F Originals",
+    "description": "B2B-Partner für Vending- und Lounge-Lösungen: Massagesessel, Kaffee-Vollautomaten, Kinderfahrgeschäfte und Snack-Automaten für Gewerbeflächen.",
+    "url": "https://jandforiginals.de/",
+    "image": "https://jandforiginals.de/assets/img/og-jf-originals.jpg",
+    "telephone": "+49 176 76858048",
+    "email": "info@jandforiginals.de",
+    "founder": { "@type": "Person", "name": "Jehan Khan Afridi" },
+    "vatID": "DE455771208",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Raiffeisenstr. 14",
+      "postalCode": "93173",
+      "addressLocality": "Wenzenbach",
+      "addressRegion": "Bayern",
+      "addressCountry": "DE"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Regensburg" },
+      { "@type": "AdministrativeArea", "name": "Oberpfalz" },
+      { "@type": "AdministrativeArea", "name": "Niederbayern" }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Main navigation">
-      <a href="#home" class="logo" aria-label="Home">JK<span>A</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#start" class="brand" aria-label="J&amp;F Originals – zum Seitenanfang">J&amp;F Originals</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menü öffnen</span>
+        <span class="bar" aria-hidden="true"></span><span class="bar" aria-hidden="true"></span><span class="bar" aria-hidden="true"></span>
       </button>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="#konzept">Konzept</a></li>
+          <li><a href="#produktwelt">Produktwelt</a></li>
+          <li><a href="#technik">Technik</a></li>
+          <li><a href="#financial-model">Financial Model</a></li>
+          <li><a href="#ablauf">Ablauf</a></li>
+          <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- Home -->
-    <section class="hero" id="home">
-      <div class="container hero-inner">
-        <p class="eyebrow">Hi, my name is</p>
-        <h1 class="hero-title">Jehan Khan Afridi<span class="accent">.</span></h1>
-        <h2 class="hero-subtitle">I build things for the web.</h2>
-        <p class="hero-text">
-          I'm a developer who enjoys turning ideas into clean, fast and accessible
-          experiences. I love learning new technologies and solving real problems with code.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View my work</a>
-          <a href="#contact" class="btn btn-outline">Get in touch</a>
+  <main id="main">
+
+    <!-- 3.1 Hero -->
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="script hero-script" aria-hidden="true">J&amp;F Originals</p>
+          <p class="eyebrow">Automatenaufsteller · Region Regensburg</p>
+          <h1 id="hero-title" class="display hero-title">Mehrwert für Ihre&nbsp;Flächen</h1>
+          <p class="lead">Verwandlung freier Flächen in hochmoderne Service-Zonen: 100&nbsp;% risikofrei, digital und perfekt auf Ihr Ambiente abgestimmt.</p>
+          <div class="btn-row">
+            <a href="#kontakt" class="btn btn-primary">Potenzialanalyse anfragen</a>
+            <a href="#produktwelt" class="btn btn-ghost">Produktwelt ansehen</a>
+          </div>
         </div>
+        <figure class="hero-photo polaroid">
+          <picture>
+            <source type="image/avif" srcset="assets/img/foyer-massage-kaffee-480.avif 480w, assets/img/foyer-massage-kaffee-800.avif 800w, assets/img/foyer-massage-kaffee-1200.avif 1200w" sizes="(min-width: 900px) 46vw, 92vw">
+            <source type="image/webp" srcset="assets/img/foyer-massage-kaffee-480.webp 480w, assets/img/foyer-massage-kaffee-800.webp 800w, assets/img/foyer-massage-kaffee-1200.webp 1200w" sizes="(min-width: 900px) 46vw, 92vw">
+            <img src="assets/img/foyer-massage-kaffee-800.jpg" width="800" height="436" alt="Service-Zone in einem Foyer mit Massagesesseln und Kaffee-Vollautomaten" fetchpriority="high" decoding="async">
+          </picture>
+        </figure>
       </div>
-      <div class="hero-glow" aria-hidden="true"></div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about">
+    <!-- 3.2 Vision -->
+    <section class="section vision" id="vision" aria-labelledby="vision-title">
+      <div class="container narrow">
+        <p class="script section-script" aria-hidden="true">unsere Vision</p>
+        <h2 id="vision-title" class="display display--solid">Mehrwert für Flächen</h2>
+        <p class="body-lg">Wir verwandeln freie Flächen in vollautomatisierte Service- und Regenerationszonen. Für unsere Partner bedeutet das: Höhere Kundenzufriedenheit und passiver Umsatz ab Tag&nbsp;1 – ohne eigene Investition und ohne operativen Aufwand für Ihr Team.</p>
+        <ul class="audience" aria-label="Für wen wir arbeiten">
+          <li>Einkaufszentren &amp; Supermärkte</li>
+          <li>Fitnessstudios</li>
+          <li>Büros &amp; Foyers</li>
+          <li>Wohnanlagen &amp; Studentenwohnheime</li>
+          <li>Wartebereiche</li>
+        </ul>
+        <p class="note">Bereits im Einsatz in Einkaufszentren und Fitnessstudios in der Region Regensburg.</p>
+      </div>
+    </section>
+
+    <!-- 3.3 Konzept -->
+    <section class="section konzept" id="konzept" aria-labelledby="konzept-title">
+      <div class="container split">
+        <div class="split-text">
+          <span class="deco-stripes deco-stripes--outline" aria-hidden="true"></span>
+          <h2 id="konzept-title" class="display display--solid">Unser Konzept</h2>
+          <p class="subhead">Vending &amp; Lounge Lösungen</p>
+          <p>Wir sind Ihr B2B Partner für die intelligente Aufwertung von Gewerbeflächen. Unser Ziel: Ungenutzte Flächen in exklusive Mehrwerte für Ihre Kunden zu verwandeln – komplett risikofrei und vollautomatisiert.</p>
+          <p>Mit modernster Vending Technologie, smarten Hybrid-Bezahlsystemen und einem echten „Rundum Sorglos Service“ bieten wir maßgeschneiderte Lounge Konzepte aus einer Hand. Wir übernehmen die komplette Investition, Logistik und Wartung, damit Sie maximalen Service bei 0&nbsp;% eigenem Aufwand genießen.</p>
+        </div>
+        <figure class="split-media framed-block">
+          <picture>
+            <source type="image/avif" srcset="assets/img/freiflaeche-service-zone-480.avif 480w, assets/img/freiflaeche-service-zone-839.avif 839w" sizes="(min-width: 900px) 46vw, 92vw">
+            <source type="image/webp" srcset="assets/img/freiflaeche-service-zone-480.webp 480w, assets/img/freiflaeche-service-zone-839.webp 839w" sizes="(min-width: 900px) 46vw, 92vw">
+            <img src="assets/img/freiflaeche-service-zone-800.jpg" width="800" height="551" loading="lazy" decoding="async" alt="Vorher-Nachher-Darstellung: links eine ungenutzte Freifläche, rechts dieselbe Fläche als hochmoderne Service-Zone">
+          </picture>
+          <span class="deco-stripes deco-stripes--solid" aria-hidden="true"></span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3.4 Produktwelt -->
+    <section class="section produktwelt" id="produktwelt" aria-labelledby="produktwelt-title">
       <div class="container">
-        <h2 class="section-title"><span class="accent">01.</span> About me</h2>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              Hello! I'm Jehan. My interest in technology started with curiosity about how
-              websites and apps work, and it grew into a passion for building them myself.
-            </p>
-            <p>
-              Today I focus on creating responsive, user-friendly websites and tools.
-              I care about clean code, thoughtful design and making things that are
-              genuinely useful to people.
-            </p>
-            <p>Here are a few technologies I've been working with recently:</p>
-            <ul class="skills">
-              <li>HTML &amp; CSS</li>
-              <li>JavaScript</li>
-              <li>Responsive Design</li>
-              <li>Git &amp; GitHub</li>
-              <li>Python</li>
-              <li>UI / UX Basics</li>
+        <div class="section-head">
+          <p class="script section-script" aria-hidden="true">unsere</p>
+          <h2 id="produktwelt-title" class="display display--outline">Produktwelt</h2>
+          <p class="section-intro">Massagesessel, Kaffee-Vollautomaten, Kinderfahrgeschäfte und Snack-Automaten – aufgestellt auf Ihrer Fläche, betrieben von uns.</p>
+        </div>
+        <ul class="product-grid">
+          <li>
+            <a class="product-card" href="#massagesessel">
+              <span class="frame">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/massagesessel-480.avif 480w, assets/img/massagesessel-800.avif 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <source type="image/webp" srcset="assets/img/massagesessel-480.webp 480w, assets/img/massagesessel-800.webp 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <img src="assets/img/massagesessel-800.jpg" width="800" height="436" loading="lazy" decoding="async" alt="Moderner Massagesessel in dunklem Leder">
+                </picture>
+              </span>
+              <span class="product-name">Massagesessel</span>
+              <span class="product-more">Details ansehen</span>
+            </a>
+          </li>
+          <li>
+            <a class="product-card" href="#kaffee">
+              <span class="frame">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/kaffee-vollautomaten-480.avif 480w, assets/img/kaffee-vollautomaten-800.avif 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <source type="image/webp" srcset="assets/img/kaffee-vollautomaten-480.webp 480w, assets/img/kaffee-vollautomaten-800.webp 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <img src="assets/img/kaffee-vollautomaten-800.jpg" width="800" height="436" loading="lazy" decoding="async" alt="Kaffee-Vollautomaten in einem Flur mit Steinwänden">
+                </picture>
+              </span>
+              <span class="product-name">Kaffee-Vollautomaten</span>
+              <span class="product-more">Details ansehen</span>
+            </a>
+          </li>
+          <li>
+            <a class="product-card" href="#kinderfahrgeschaefte">
+              <span class="frame">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/kinderfahrgeschaeft-480.avif 480w, assets/img/kinderfahrgeschaeft-800.avif 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <source type="image/webp" srcset="assets/img/kinderfahrgeschaeft-480.webp 480w, assets/img/kinderfahrgeschaeft-800.webp 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <img src="assets/img/kinderfahrgeschaeft-800.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Rotes Kinderfahrgeschäft in Form eines Feuerwehrautos">
+                </picture>
+              </span>
+              <span class="product-name">Kinderfahrgeschäfte</span>
+              <span class="product-more">Details ansehen</span>
+            </a>
+          </li>
+          <li>
+            <a class="product-card" href="#snack-automaten">
+              <span class="frame">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/snackautomat-480.avif 480w, assets/img/snackautomat-800.avif 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <source type="image/webp" srcset="assets/img/snackautomat-480.webp 480w, assets/img/snackautomat-800.webp 800w" sizes="(min-width: 1000px) 25vw, (min-width: 600px) 46vw, 92vw">
+                  <img src="assets/img/snackautomat-800.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Snack- und Getränkeautomat aus Edelstahl">
+                </picture>
+              </span>
+              <span class="product-name">Snack-Automaten</span>
+              <span class="product-more">Details ansehen</span>
+            </a>
+          </li>
+        </ul>
+        <span class="deco-cross" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <!-- 3.5 Detail: Massagesessel -->
+    <section class="section detail" id="massagesessel" aria-labelledby="massage-title">
+      <div class="container split split--reverse">
+        <div class="split-text">
+          <p class="kicker">Design-Optionen</p>
+          <h2 id="massage-title" class="display display--outline display--md">Massagesessel</h2>
+          <p class="subhead">Design-Option Casada Atlas</p>
+          <dl class="specs">
+            <div><dt>Stellfläche (aufrecht)</dt><dd>ca. 1,12&nbsp;m²</dd></div>
+            <div><dt>Liegefläche (maximal gekippt)</dt><dd>ca. 1,41&nbsp;m²</dd></div>
+            <div><dt>Maße aufrecht (L&nbsp;×&nbsp;B&nbsp;×&nbsp;H)</dt><dd>142 × 79 × 123,5&nbsp;cm</dd></div>
+            <div><dt>Maße liegend (L&nbsp;×&nbsp;B&nbsp;×&nbsp;H)</dt><dd>179 × 79 × 92&nbsp;cm</dd></div>
+            <div><dt>Gewicht</dt><dd>79&nbsp;kg</dd></div>
+          </dl>
+        </div>
+        <figure class="split-media offset-frame">
+          <picture>
+            <source type="image/avif" srcset="assets/img/massagesessel-casada-atlas-480.avif 480w, assets/img/massagesessel-casada-atlas-800.avif 800w" sizes="(min-width: 900px) 40vw, 92vw">
+            <source type="image/webp" srcset="assets/img/massagesessel-casada-atlas-480.webp 480w, assets/img/massagesessel-casada-atlas-800.webp 800w" sizes="(min-width: 900px) 40vw, 92vw">
+            <img src="assets/img/massagesessel-casada-atlas-800.jpg" width="800" height="801" loading="lazy" decoding="async" alt="Massagesessel Casada Atlas in Weiß und Grau">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3.5 Detail: Kaffee -->
+    <section class="section detail kaffee" id="kaffee" aria-labelledby="kaffee-title">
+      <div class="container split">
+        <div class="split-text">
+          <h2 id="kaffee-title" class="display display--outline display--md">Kaffee-Konzepte</h2>
+          <p>Flexibel anpassbar an Ihre Platzverhältnisse: Ob kompakte Thekenlösung oder freistehender Vollautomat – wir bieten für jede Foyergröße das passende Kaffeesystem.</p>
+        </div>
+        <div class="coffee-panel">
+          <figure class="coffee-item">
+            <figcaption class="coffee-label">Tabletop</figcaption>
+            <picture>
+              <source type="image/avif" srcset="assets/img/kaffee-tabletop-480.avif 480w, assets/img/kaffee-tabletop-800.avif 800w" sizes="(min-width: 900px) 34vw, 80vw">
+              <source type="image/webp" srcset="assets/img/kaffee-tabletop-480.webp 480w, assets/img/kaffee-tabletop-800.webp 800w" sizes="(min-width: 900px) 34vw, 80vw">
+              <img src="assets/img/kaffee-tabletop-800.jpg" width="800" height="436" loading="lazy" decoding="async" alt="Kompakter Kaffee-Vollautomat als Tabletop-Lösung auf einer Theke">
+            </picture>
+            <p class="coffee-size">ca. 65–85 × 40–48 × 50–65&nbsp;cm (H × B × T)</p>
+          </figure>
+          <figure class="coffee-item">
+            <figcaption class="coffee-label">Standgerät</figcaption>
+            <picture>
+              <source type="image/avif" srcset="assets/img/kaffee-standgeraet-480.avif 480w, assets/img/kaffee-standgeraet-800.avif 800w" sizes="(min-width: 900px) 34vw, 80vw">
+              <source type="image/webp" srcset="assets/img/kaffee-standgeraet-480.webp 480w, assets/img/kaffee-standgeraet-800.webp 800w" sizes="(min-width: 900px) 34vw, 80vw">
+              <img class="img-crop" src="assets/img/kaffee-standgeraet-800.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Freistehender Kaffee-Vollautomat als Standgerät in einem hellen Foyer">
+            </picture>
+            <p class="coffee-size">ca. 183 × 60–75 × 62–77&nbsp;cm (H × B × T)</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.5 Detail: Kinderfahrgeschäfte -->
+    <section class="section detail" id="kinderfahrgeschaefte" aria-labelledby="kinder-title">
+      <div class="container split split--reverse">
+        <div class="split-text">
+          <h2 id="kinder-title" class="display display--outline display--md">Kinder&shy;fahrgeschäfte</h2>
+          <p>Attraktive Erlebniswelten für unsere kleinen Gäste: Unsere hochwertigen Fahrgeschäfte steigern die Kundenverweildauer und sorgen für begeisterte Kinder sowie eine freundliche, familienorientierte Atmosphäre in Ihrem Einkaufszentrum.</p>
+        </div>
+        <figure class="split-media offset-frame">
+          <picture>
+            <source type="image/avif" srcset="assets/img/kinderfahrgeschaeft-feuerwehr-480.avif 480w, assets/img/kinderfahrgeschaeft-feuerwehr-800.avif 800w, assets/img/kinderfahrgeschaeft-feuerwehr-1200.avif 1200w" sizes="(min-width: 900px) 40vw, 92vw">
+            <source type="image/webp" srcset="assets/img/kinderfahrgeschaeft-feuerwehr-480.webp 480w, assets/img/kinderfahrgeschaeft-feuerwehr-800.webp 800w, assets/img/kinderfahrgeschaeft-feuerwehr-1200.webp 1200w" sizes="(min-width: 900px) 40vw, 92vw">
+            <img src="assets/img/kinderfahrgeschaeft-feuerwehr-800.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Kinderfahrgeschäft in Form eines roten Feuerwehrautos im Freien">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3.5 Detail: Snack-Automaten -->
+    <section class="section detail" id="snack-automaten" aria-labelledby="snack-title">
+      <div class="container split">
+        <div class="split-text">
+          <h2 id="snack-title" class="display display--outline display--md">Snack-Automaten</h2>
+          <p>Rund um die Uhr versorgt: Unsere wetterfesten Snack- und Getränkeautomaten bieten Snacks und Erfrischungen auch außerhalb der Öffnungszeiten – ideal für Eingangsbereiche, Außenflächen und Wartezonen.</p>
+        </div>
+        <figure class="split-media offset-frame offset-frame--left">
+          <picture>
+            <source type="image/avif" srcset="assets/img/snackautomat-480.avif 480w, assets/img/snackautomat-800.avif 800w" sizes="(min-width: 900px) 40vw, 92vw">
+            <source type="image/webp" srcset="assets/img/snackautomat-480.webp 480w, assets/img/snackautomat-800.webp 800w" sizes="(min-width: 900px) 40vw, 92vw">
+            <img src="assets/img/snackautomat-800.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Snack- und Getränkeautomat mit Glasfront">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3.6 Technik & Komfort -->
+    <section class="section technik" id="technik" aria-labelledby="technik-title">
+      <div class="container split split--top">
+        <div class="split-text">
+          <h2 id="technik-title" class="display display--outline">Technik &amp; Komfort</h2>
+          <p class="body-lg">Unsere Systeme sind auf maximale Nutzerfreundlichkeit und eine reibungslose Integration ausgelegt.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature">
+            <h3 class="feature-title">Hybrid Payment</h3>
+            <p>Maximale Flexibilität für Kunden durch die Kombination aus modernen, kontaktlosen Bezahlsystemen (Kreditkarte, Apple Pay, Google Pay) und klassischem Münzeinwurf.</p>
+            <span class="meter" aria-hidden="true"><span></span></span>
+          </article>
+          <article class="feature">
+            <h3 class="feature-title">Plug &amp; Play Setup</h3>
+            <p>Minimaler Aufwand für Ihre Räumlichkeiten. Für den gesamten Betrieb der Service-Zone wird lediglich ein standardmäßiger Stromanschluss benötigt.</p>
+            <span class="meter" aria-hidden="true"><span></span></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.7 Financial Model -->
+    <section class="section financial" id="financial-model" aria-labelledby="financial-title">
+      <div class="container split split--top">
+        <div class="split-text">
+          <p class="script section-script" aria-hidden="true">unser</p>
+          <h2 id="financial-title" class="display display--outline">Financial Model</h2>
+          <p class="body-lg">Ein transparentes Konzept ohne versteckte Kosten. Wir übernehmen das gesamte Risiko, während Sie ab Tag&nbsp;1 von exklusiven Mehrwerten profitieren.</p>
+          <span class="deco-star" aria-hidden="true"></span>
+        </div>
+        <ul class="tiles">
+          <li class="tile">
+            <h3 class="pill">0&nbsp;% Investitionskosten</h3>
+            <p>J&amp;F Originals übernimmt die komplette Anschaffung, Logistik und den Aufbau der gesamten Service-Zone.</p>
+          </li>
+          <li class="tile">
+            <h3 class="pill">0&nbsp;% Aufwand für Ihr Team</h3>
+            <p>Wartung, technische Updates, Befüllung und Reinigung werden vollständig durch unseren Service abgedeckt.</p>
+          </li>
+          <li class="tile">
+            <h3 class="pill">Miete oder Umsatzbeteiligung</h3>
+            <p>Sie stellen lediglich die Freifläche zur Verfügung – wahlweise gegen feste monatliche Standplatzmiete oder mit Umsatzbeteiligung.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3.8 Ablauf -->
+    <section class="section ablauf" id="ablauf" aria-labelledby="ablauf-title">
+      <div class="container split split--top">
+        <div class="split-text">
+          <p class="script section-script" aria-hidden="true">einfacher</p>
+          <h2 id="ablauf-title" class="display display--outline">Ablauf</h2>
+          <p class="body-lg">In drei unkomplizierten Schritten verwandeln wir Ihre ungenutzten Freiflächen in eine moderne, vollautomatisierte Service-Zone.</p>
+          <span class="deco-hex" aria-hidden="true"></span>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>Potenzialanalyse</h3>
+            <p>Gemeinsame Vor-Ort-Besichtigung Ihrer Flächen und Erstellung eines maßgeschneiderten Modul-Konzepts.</p>
+          </li>
+          <li>
+            <h3>Logistik &amp; Setup</h3>
+            <p>Komplette Lieferung, fachgerechte Montage und die technische Inbetriebnahme durch unser Team – komplett ohne Aufwand für Sie.</p>
+          </li>
+          <li>
+            <h3>Aktivierung &amp; Betrieb</h3>
+            <p>Die Service-Zone geht live. Wir übernehmen die laufende Wartung und Pflege, während Sie von passivem Umsatz profitieren.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3.9 Kontakt -->
+    <section class="section kontakt" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container">
+        <p class="script kontakt-script" aria-hidden="true">Lassen Sie uns Ihre Freiflächen aktivieren</p>
+        <div class="kontakt-grid">
+          <div class="kontakt-info">
+            <h2 id="kontakt-title" class="display display--outline">Connect</h2>
+            <p class="sr-only">Lassen Sie uns Ihre Freiflächen aktivieren.</p>
+            <p class="body-lg">Fragen Sie jetzt Ihre Potenzialanalyse an – telefonisch, per E-Mail oder über das Formular.</p>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <a href="tel:+4917676858048">+49 176 76858048</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:info@jandforiginals.de">info@jandforiginals.de</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>93173 Wenzenbach · Region Regensburg</span>
+              </li>
             </ul>
           </div>
-          <div class="about-card reveal">
-            <div class="avatar" aria-hidden="true">JKA</div>
-            <dl class="facts">
-              <div><dt>Focus</dt><dd>Web Development</dd></div>
-              <div><dt>Currently</dt><dd>Building &amp; learning</dd></div>
-              <div><dt>Open to</dt><dd>Collaborations</dd></div>
-            </dl>
-          </div>
+
+          <!-- Kontaktformular v1: öffnet das E-Mail-Programm (mailto). Später ggf. durch PHP-Mailer ersetzen. -->
+          <form class="contact-form" id="contact-form" action="mailto:info@jandforiginals.de" method="post" enctype="text/plain" novalidate>
+            <div class="field">
+              <label for="f-name">Name <span aria-hidden="true">*</span></label>
+              <input id="f-name" name="Name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-company">Unternehmen <span aria-hidden="true">*</span></label>
+              <input id="f-company" name="Unternehmen" type="text" autocomplete="organization" required>
+            </div>
+            <div class="field">
+              <label for="f-email">E-Mail <span aria-hidden="true">*</span></label>
+              <input id="f-email" name="E-Mail" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Telefon</label>
+              <input id="f-phone" name="Telefon" type="tel" autocomplete="tel">
+            </div>
+            <div class="field field--full">
+              <label for="f-area">Art der Fläche</label>
+              <select id="f-area" name="Art der Fläche">
+                <option value="">Bitte wählen</option>
+                <option>Einkaufszentrum</option>
+                <option>Fitnessstudio</option>
+                <option>Büro &amp; Foyer</option>
+                <option>Wohnanlage</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <fieldset class="field field--full checks">
+              <legend>Interesse</legend>
+              <label><input type="checkbox" name="Interesse" value="Massagesessel"> Massagesessel</label>
+              <label><input type="checkbox" name="Interesse" value="Kaffee"> Kaffee</label>
+              <label><input type="checkbox" name="Interesse" value="Kinderfahrgeschäfte"> Kinderfahrgeschäfte</label>
+              <label><input type="checkbox" name="Interesse" value="Snack-Automaten"> Snack-Automaten</label>
+            </fieldset>
+            <div class="field field--full">
+              <label for="f-message">Nachricht</label>
+              <textarea id="f-message" name="Nachricht" rows="5"></textarea>
+            </div>
+            <div class="field field--full consent">
+              <label>
+                <input id="f-consent" type="checkbox" name="Einwilligung" value="ja" required>
+                <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. <span aria-hidden="true">*</span></span>
+              </label>
+            </div>
+            <p class="form-hint field--full">* Pflichtfelder. Beim Absenden öffnet sich Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht an info@jandforiginals.de.</p>
+            <p class="form-status field--full" id="form-status" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-primary field--full">Potenzialanalyse anfragen</button>
+          </form>
         </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title"><span class="accent">02.</span> Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="project-top">
-              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              <a href="https://github.com/afridi107/MyWebsite" class="project-link" target="_blank" rel="noopener" aria-label="View source on GitHub">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
-              </a>
-            </div>
-            <h3>Personal Website</h3>
-            <p>This site — a responsive, dark-themed portfolio built with plain HTML, CSS and JavaScript and hosted on GitHub Pages.</p>
-            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-top">
-              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              <a href="#" class="project-link" aria-label="Project link">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
-              </a>
-            </div>
-            <h3>Task Manager App</h3>
-            <p>A simple to-do app that lets you add, complete and filter tasks, with data saved in the browser.</p>
-            <ul class="tags"><li>JavaScript</li><li>LocalStorage</li></ul>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-top">
-              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              <a href="#" class="project-link" aria-label="Project link">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
-              </a>
-            </div>
-            <h3>Weather Dashboard</h3>
-            <p>A clean dashboard that shows current conditions and a forecast for any city using a public weather API.</p>
-            <ul class="tags"><li>API</li><li>Fetch</li><li>CSS Grid</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container contact">
-        <h2 class="section-title center"><span class="accent">03.</span> Get in touch</h2>
-        <p class="contact-text reveal">
-          Whether you have a question, a project idea, or just want to say hi,
-          my inbox is always open. I'll do my best to get back to you!
-        </p>
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-          </div>
-          <div class="field full">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
-          <button type="submit" class="btn btn-primary full">Send message</button>
-        </form>
-        <ul class="socials">
-          <li><a href="mailto:your.email@example.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
-          </a></li>
-          <li><a href="https://github.com/afridi107" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </a></li>
-        </ul>
       </div>
     </section>
   </main>
 
+  <!-- 3.10 Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Jehan Khan Afridi. Built with HTML, CSS &amp; JavaScript.</p>
-      <a href="#home" class="back-to-top">Back to top &uarr;</a>
+    <div class="container footer-inner">
+      <p class="footer-brand">J&amp;F Originals</p>
+      <address>Raiffeisenstr. 14 · 93173 Wenzenbach</address>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+      <p class="copy">© 2026 J&amp;F Originals</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
